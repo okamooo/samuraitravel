@@ -1,0 +1,143 @@
+PS C:\workspease\samuraitravel> heroku logs -n 10000 | Select-String -Pattern "Exception:", "Caused by", "error"
+
+2025-03-13T14:35:05.009695+00:00 app[web.1]: 2025-03-13T14:35:05.006Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception en
+countered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process imp
+ort candidates for configuration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autocon
+figure.mail.MailSenderAutoConfiguration
+2025-03-13T14:35:05.023687+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'de
+bug' enabled.
+2025-03-13T14:35:05.076578+00:00 app[web.1]: 2025-03-13T14:35:05.070Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application
+run failed
+2025-03-13T14:35:05.076582+00:00 app[web.1]: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for config
+uration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autoconfigure.mail.MailSenderAut
+oConfiguration
+2025-03-13T14:35:05.076601+00:00 app[web.1]: Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigu
+re.mail.MailSenderAutoConfiguration
+2025-03-13T14:35:05.076603+00:00 app[web.1]: Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'MAILGUN_SMT
+P_SERVER' in value "${MAILGUN_SMTP_SERVER}"
+2025-03-13T17:22:42.997283+00:00 app[web.1]: 2025-03-13T17:22:42.997Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception en
+countered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process imp
+ort candidates for configuration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autocon
+figure.mail.MailSenderAutoConfiguration
+2025-03-13T17:22:43.005292+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'de
+bug' enabled.
+2025-03-13T17:22:43.031131+00:00 app[web.1]: 2025-03-13T17:22:43.028Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application
+run failed
+2025-03-13T17:22:43.031150+00:00 app[web.1]: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for config
+uration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autoconfigure.mail.MailSenderAut
+oConfiguration
+2025-03-13T17:22:43.031191+00:00 app[web.1]: Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigu
+re.mail.MailSenderAutoConfiguration
+2025-03-13T17:22:43.031194+00:00 app[web.1]: Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'MAILGUN_SMT
+P_SERVER' in value "${MAILGUN_SMTP_SERVER}"
+2025-03-13T22:44:54.943725+00:00 app[web.1]: 2025-03-13T22:44:54.943Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception en
+countered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process imp
+ort candidates for configuration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autocon
+figure.mail.MailSenderAutoConfiguration
+2025-03-13T22:44:54.956995+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'de
+bug' enabled.
+2025-03-13T22:44:54.989129+00:00 app[web.1]: 2025-03-13T22:44:54.985Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application
+run failed
+2025-03-13T22:44:54.989133+00:00 app[web.1]: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for config
+uration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autoconfigure.mail.MailSenderAut
+oConfiguration
+2025-03-13T22:44:54.989167+00:00 app[web.1]: Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigu
+re.mail.MailSenderAutoConfiguration
+2025-03-13T22:44:54.989170+00:00 app[web.1]: Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'MAILGUN_SMT
+P_SERVER' in value "${MAILGUN_SMTP_SERVER}"
+2025-03-14T04:13:14.105540+00:00 app[web.1]: 2025-03-14T04:13:14.105Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception en
+countered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process imp
+ort candidates for configuration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autocon
+figure.mail.MailSenderAutoConfiguration
+2025-03-14T04:13:14.112738+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'de
+bug' enabled.
+2025-03-14T04:13:14.134886+00:00 app[web.1]: 2025-03-14T04:13:14.131Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application
+run failed
+2025-03-14T04:13:14.134888+00:00 app[web.1]: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for config
+uration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autoconfigure.mail.MailSenderAut
+oConfiguration
+2025-03-14T04:13:14.134903+00:00 app[web.1]: Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigu
+re.mail.MailSenderAutoConfiguration
+2025-03-14T04:13:14.134905+00:00 app[web.1]: Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'MAILGUN_SMT
+P_SERVER' in value "${MAILGUN_SMTP_SERVER}"
+2025-03-14T10:05:37.088170+00:00 app[web.1]: 2025-03-14T10:05:37.087Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception en
+countered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process imp
+ort candidates for configuration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autocon
+figure.mail.MailSenderAutoConfiguration
+2025-03-14T10:05:37.095636+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'de
+bug' enabled.
+2025-03-14T10:05:37.123074+00:00 app[web.1]: 2025-03-14T10:05:37.120Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application
+run failed
+2025-03-14T10:05:37.123090+00:00 app[web.1]: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for config
+uration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autoconfigure.mail.MailSenderAut
+oConfiguration
+2025-03-14T10:05:37.123116+00:00 app[web.1]: Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigu
+re.mail.MailSenderAutoConfiguration
+2025-03-14T10:05:37.123118+00:00 app[web.1]: Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'MAILGUN_SMT
+P_SERVER' in value "${MAILGUN_SMTP_SERVER}"
+2025-03-14T11:07:29.588671+00:00 app[web.1]: 2025-03-14T11:07:29.588Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception en
+countered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process imp
+ort candidates for configuration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autocon
+figure.mail.MailSenderAutoConfiguration
+2025-03-14T11:07:29.595749+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'de
+bug' enabled.
+2025-03-14T11:07:29.620244+00:00 app[web.1]: 2025-03-14T11:07:29.617Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application
+run failed
+2025-03-14T11:07:29.620245+00:00 app[web.1]: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for config
+uration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autoconfigure.mail.MailSenderAut
+oConfiguration
+2025-03-14T11:07:29.620289+00:00 app[web.1]: Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigu
+re.mail.MailSenderAutoConfiguration
+2025-03-14T11:07:29.620292+00:00 app[web.1]: Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'MAILGUN_SMT
+P_SERVER' in value "${MAILGUN_SMTP_SERVER}"
+2025-03-14T11:07:36.455653+00:00 app[web.1]: 2025-03-14T11:07:36.455Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception en
+countered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process imp
+ort candidates for configuration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autocon
+figure.mail.MailSenderAutoConfiguration
+2025-03-14T11:07:36.462971+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'de
+bug' enabled.
+2025-03-14T11:07:36.492201+00:00 app[web.1]: 2025-03-14T11:07:36.488Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application
+run failed
+2025-03-14T11:07:36.492204+00:00 app[web.1]: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for config
+uration class [com.example.samuraitravel.SamuraitravelApplication]: Error processing condition on org.springframework.boot.autoconfigure.mail.MailSenderAut
+oConfiguration
+2025-03-14T11:07:36.492223+00:00 app[web.1]: Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigu
+re.mail.MailSenderAutoConfiguration
+2025-03-14T11:07:36.492226+00:00 app[web.1]: Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'MAILGUN_SMT
+P_SERVER' in value "${MAILGUN_SMTP_SERVER}"
+2025-03-14T11:12:50.576473+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=samuraitravel20250310-c41510ccd27e.herokuapp
+.com request_id=98085c3f-439f-4610-9791-98d474725f33 fwd="60.125.62.148" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-14T11:12:51.123416+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=samuraitravel20250310-c41510ccd27e.herokuapp
+.com request_id=8820bc8a-cd2c-436b-96a0-7793d178afaa fwd="60.125.62.148" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-14T11:25:21.399634+00:00 app[web.1]: 2025-03-14T11:25:21.396Z ERROR 2 --- [nio-6566-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.serv
+ice() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Faile
+d messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 Domain sandboxa0125d61584a44bcb43fc35e87c84fbb.mailgun.org is not allowed to send: San
+dbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+2025-03-14T11:25:21.399640+00:00 app[web.1]: Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 Domain sandboxa0125d61584a44bcb43fc
+35e87c84fbb.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized
+recipients in Account Settings.
+2025-03-14T11:25:21.399644+00:00 app[web.1]: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedExcepti
+on: 421 Domain sandboxa0125d61584a44bcb43fc35e87c84fbb.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your o
+wn domain or add the address to authorized recipients in Account Settings.
+2025-03-14T11:25:21.399687+00:00 app[web.1]: at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.ja
+r!/:na]
+2025-03-15T01:58:45.532525+00:00 app[web.1]: 2025-03-15T01:58:45.527Z ERROR 2 --- [io-32998-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.serv
+ice() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "St
+ring.split(String)" because the return value of "com.example.samuraitravel.form.ReservationInputForm.getFromCheckinDateToCheckoutDate()" is null] with root
+ cause
+2025-03-15T01:58:45.532542+00:00 app[web.1]: java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "com.example.
+samuraitravel.form.ReservationInputForm.getFromCheckinDateToCheckoutDate()" is null
+2025-03-15T01:58:45.532580+00:00 app[web.1]: at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.ja
+r!/:na]
+2025-03-16T05:11:29.488185+00:00 app[web.1]: 2025-03-16T05:11:29.484Z ERROR 2 --- [io-31259-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.serv
+ice() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Faile
+d messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 Domain sandboxa0125d61584a44bcb43fc35e87c84fbb.mailgun.org is not allowed to send: San
+dbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+2025-03-16T05:11:29.488202+00:00 app[web.1]: Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 Domain sandboxa0125d61584a44bcb43fc
+35e87c84fbb.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized
+recipients in Account Settings.
+2025-03-16T05:11:29.488207+00:00 app[web.1]: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedExcepti
+on: 421 Domain sandboxa0125d61584a44bcb43fc35e87c84fbb.mailgun.org is not allowed to send: Sandbox subdomains are for test purposes only. Please add your o
+wn domain or add the address to authorized recipients in Account Settings.
+2025-03-16T05:11:29.488253+00:00 app[web.1]: at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.ja
+r!/:na]
