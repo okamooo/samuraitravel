@@ -1,0 +1,123 @@
+PS C:\workspease\samuraitravel> git push heroku main
+Everything up-to-date
+PS C:\workspease\samuraitravel> heroku config
+=== samuraitravel20250310 Config Vars
+
+DB_PASSWORD:           jmzmslv73jk7ryxc
+DB_URL:                jdbc:mysql://olxl65dqfuqr6s4y.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/x5nydqz0e2yz35oe
+DB_USERNAME:           nkyqs0usm3e3pylg
+JAWSDB_MARIA_BLUE_URL: mysql://u9kg3b56w8eohaox:wvb75tq1ku68xjme@if0ck476y7axojpg.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/kpa8z0lsyqzn3mb6
+JAWSDB_MARIA_URL:      mysql://nkyqs0usm3e3pylg:jmzmslv73jk7ryxc@olxl65dqfuqr6s4y.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/x5nydqz0e2yz35oe
+MAILGUN_API_KEY:       4ca4fea56d777db44b90dd56706c6a4b-623424ea-d288ffcf
+MAILGUN_DOMAIN:        sandboxa0125d61584a44bcb43fc35e87c84fbb.mailgun.org
+MAILGUN_PUBLIC_KEY:    pubkey-b4f8e231e348ae2110a2e311c9eb04b4
+MAILGUN_SMTP_LOGIN:    postmaster@sandboxa0125d61584a44bcb43fc35e87c84fbb.mailgun.org
+MAILGUN_SMTP_PASSWORD: 87360fb4c39ca674d0a6c2e344438f25-623424ea-482ec7c0
+MAILGUN_SMTP_PORT:     587
+MAILGUN_SMTP_SERVER:   smtp.mailgun.org
+MAIL_PASSWORD:         aggs pkvt xcie cxcj
+MAIL_USERNAME:         okamo0180@gmail.com
+STRIPE_API_KEY:        sk_test_51Qx1V8By52mpTfqUy6E5jjAWzm7ztvLfG8U2noyL6cL098FXkoN8wvtH9qQ8867xZuNdhVDdAfwSw2NZrROtap8Z00f7NWOAsq
+STRIPE_WEBHOOK_SECRET: whsec_jWBIM4IQdo8QhlRsBYvtKRZ80qwKq2CR
+PS C:\workspease\samuraitravel> heroku logs
+2025-03-17T03:49:22.216147+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216147+00:00 app[web.1]: at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216147+00:00 app[web.1]: at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216148+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216148+00:00 app[web.1]: at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216148+00:00 app[web.1]: at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216148+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216149+00:00 app[web.1]: at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216149+00:00 app[web.1]: at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216149+00:00 app[web.1]: at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216149+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216150+00:00 app[web.1]: at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216150+00:00 app[web.1]: at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216150+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216150+00:00 app[web.1]: at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216150+00:00 app[web.1]: at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216151+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216151+00:00 app[web.1]: at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216151+00:00 app[web.1]: at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216151+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216153+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216153+00:00 app[web.1]: at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216153+00:00 app[web.1]: at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216154+00:00 app[web.1]: at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216154+00:00 app[web.1]: at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216155+00:00 app[web.1]: at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216156+00:00 app[web.1]: at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.2.jar!/:6.4.2]
+2025-03-17T03:49:22.216156+00:00 app[web.1]: at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216162+00:00 app[web.1]: at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216162+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216162+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216163+00:00 app[web.1]: at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216163+00:00 app[web.1]: at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216164+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216164+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216164+00:00 app[web.1]: at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216165+00:00 app[web.1]: at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216165+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216165+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216165+00:00 app[web.1]: at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216166+00:00 app[web.1]: at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar!/:6.2.2]
+2025-03-17T03:49:22.216166+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216166+00:00 app[web.1]: at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216167+00:00 app[web.1]: at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216167+00:00 app[web.1]: at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216167+00:00 app[web.1]: at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216167+00:00 app[web.1]: at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216167+00:00 app[web.1]: at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216168+00:00 app[web.1]: at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216168+00:00 app[web.1]: at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:731) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216170+00:00 app[web.1]: at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216170+00:00 app[web.1]: at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216170+00:00 app[web.1]: at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216171+00:00 app[web.1]: at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216171+00:00 app[web.1]: at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216171+00:00 app[web.1]: at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216171+00:00 app[web.1]: at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216171+00:00 app[web.1]: at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216171+00:00 app[web.1]: at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar!/:na]
+2025-03-17T03:49:22.216172+00:00 app[web.1]: at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+2025-03-17T03:49:22.216173+00:00 app[web.1]:
+2025-03-17T03:49:22.223602+00:00 heroku[router]: at=info method=POST path="/signup" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=cd00bd67-b2c6-4eee-981f-ccd10864c30e fwd="60.125.62.148" dyno=web.1 connect=0ms service=1404ms status=302 bytes=401 protocol=https
+2025-03-17T03:49:22.439130+00:00 heroku[router]: at=info method=GET path="/login" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=2c9894f5-273d-4fb0-a42e-33942bfd48c0 fwd="60.125.62.148" dyno=web.1 connect=0ms service=18ms status=200 bytes=5873 protocol=https
+2025-03-17T03:49:22.713164+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=c0b56d69-681c-4640-bbd7-a968aa12891b fwd="60.125.62.148" dyno=web.1 connect=0ms service=2ms status=200 bytes=3509 protocol=https
+2025-03-17T03:49:22.713356+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=22e4fd65-4f0f-4905-8d6d-1d203aae4879 fwd="60.125.62.148" dyno=web.1 connect=0ms service=4ms status=200 bytes=2333 protocol=https
+2025-03-17T03:52:41.466978+00:00 heroku[router]: at=info method=POST path="/login" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=51801c48-89fe-42d5-95c5-1c3c9aaaa9e8 fwd="60.125.62.148" dyno=web.1 connect=0ms service=110ms status=302 bytes=407 protocol=https
+2025-03-17T03:52:41.680654+00:00 heroku[router]: at=info method=GET path="/login?error" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=3906db91-c510-4a43-9e3e-6b2b96d0b08a fwd="60.125.62.148" dyno=web.1 connect=0ms service=16ms status=200 bytes=6046 protocol=https
+2025-03-17T03:52:41.910141+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=c1030aa9-d5a7-4f44-9c4e-38dd16e107eb fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=2333 protocol=https
+2025-03-17T03:52:41.910862+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=564de98d-4d26-4038-ac8a-7be46aefc112 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=3509 protocol=https
+2025-03-17T03:53:03.839765+00:00 heroku[router]: at=info method=POST path="/login" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=7317858a-86e9-4b37-9b70-ba9a810f9e8a fwd="60.125.62.148" dyno=web.1 connect=0ms service=9ms status=302 bytes=407 protocol=https
+2025-03-17T03:53:04.028628+00:00 heroku[router]: at=info method=GET path="/login?error" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=42c7e218-c4ca-4f7b-a9c1-5b261df8672a fwd="60.125.62.148" dyno=web.1 connect=0ms service=6ms status=200 bytes=6046 protocol=https
+2025-03-17T03:53:04.248048+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=de44237b-bea2-4caf-ba33-c98211756132 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=3509 protocol=https
+2025-03-17T03:53:04.248139+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=9395e25b-6560-4983-ae6a-455fb069ef46 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=2333 protocol=https
+2025-03-17T03:53:21.747676+00:00 heroku[router]: at=info method=POST path="/login" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=399f88bf-3621-4ac5-973f-cc9484a7fdf4 fwd="60.125.62.148" dyno=web.1 connect=0ms service=82ms status=302 bytes=488 protocol=https
+2025-03-17T03:53:21.969410+00:00 heroku[router]: at=info method=GET path="/?loggedIn" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=695cc81c-bdf4-4829-8b02-bd310109f447 fwd="60.125.62.148" dyno=web.1 connect=0ms service=40ms status=200 bytes=30847 protocol=https
+2025-03-17T03:53:22.218756+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=613662b3-839f-47f8-95df-c0a68823ac97 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=2333 protocol=https
+2025-03-17T03:53:22.312986+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=7c1b17f3-2468-4172-8d6f-3f2b2466fe84 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=3509 protocol=https
+2025-03-17T03:53:22.405492+00:00 heroku[router]: at=info method=GET path="/storage/house01.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=ced79a6a-922f-46c1-9324-a374c10d4450 fwd="60.125.62.148" dyno=web.1 connect=0ms service=5ms status=200 bytes=489595 protocol=https
+2025-03-17T03:53:22.496128+00:00 heroku[router]: at=info method=GET path="/storage/house07.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=dfdf9a01-f424-4071-8b08-702cfe42e891 fwd="60.125.62.148" dyno=web.1 connect=0ms service=6ms status=200 bytes=902783 protocol=https
+2025-03-17T03:53:22.575726+00:00 heroku[router]: at=info method=GET path="/storage/house09.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=5312013f-0a6e-4544-bff9-6c864f851666 fwd="60.125.62.148" dyno=web.1 connect=0ms service=6ms status=200 bytes=1044904 protocol=https
+2025-03-17T03:53:22.577201+00:00 heroku[router]: at=info method=GET path="/storage/house08.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=e50db8dc-e594-4a12-bf75-66d4f281fd62 fwd="60.125.62.148" dyno=web.1 connect=0ms service=9ms status=200 bytes=596588 protocol=https
+2025-03-17T03:53:22.578573+00:00 heroku[router]: at=info method=GET path="/storage/house10.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=8efa4823-7283-4074-9706-2244660e6f21 fwd="60.125.62.148" dyno=web.1 connect=0ms service=8ms status=200 bytes=735930 protocol=https
+2025-03-17T03:53:22.670429+00:00 heroku[router]: at=info method=GET path="/storage/house06.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=ff0528db-cd60-4bfd-a76c-0418f8829df7 fwd="60.125.62.148" dyno=web.1 connect=0ms service=5ms status=200 bytes=745479 protocol=https
+2025-03-17T03:53:23.404175+00:00 heroku[router]: at=info method=GET path="/storage/house02.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=decab6a0-90d2-40d5-86f5-f034fc342dec fwd="60.125.62.148" dyno=web.1 connect=0ms service=5ms status=200 bytes=622130 protocol=https
+2025-03-17T03:53:23.476948+00:00 heroku[router]: at=info method=GET path="/storage/house03.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=88a9e631-a400-42f3-bea5-069321984b2f fwd="60.125.62.148" dyno=web.1 connect=0ms service=7ms status=200 bytes=967347 protocol=https
+2025-03-17T03:53:23.654321+00:00 heroku[router]: at=info method=GET path="/storage/house04.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=3925f1e2-270c-48bd-a927-03989fd3f29e fwd="60.125.62.148" dyno=web.1 connect=0ms service=5ms status=200 bytes=569160 protocol=https
+2025-03-17T03:53:23.732393+00:00 heroku[router]: at=info method=GET path="/storage/house05.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=6751ef82-aaae-4959-97fc-0a0d559a8197 fwd="60.125.62.148" dyno=web.1 connect=0ms service=5ms status=200 bytes=1061885 protocol=https
+2025-03-17T03:53:24.514909+00:00 heroku[router]: at=info method=GET path="/houses/44" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=ce9a8e27-5a85-4ed1-8486-d2e224c01941 fwd="60.125.62.148" dyno=web.1 connect=0ms service=29ms status=200 bytes=14413 protocol=https
+2025-03-17T03:53:24.712397+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=5845c3f4-2ef1-49c3-a9c2-73c41adde434 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=2333 protocol=https
+2025-03-17T03:53:24.717588+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=e91774c9-95b5-43b3-8086-c210269ca829 fwd="60.125.62.148" dyno=web.1 connect=0ms service=2ms status=200 bytes=3509 protocol=https
+2025-03-17T03:53:24.718922+00:00 heroku[router]: at=info method=GET path="/js/flatpickr.js" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=079c2ca6-d19a-4271-848d-c3c2f8b0d995 fwd="60.125.62.148" dyno=web.1 connect=0ms service=2ms status=200 bytes=714 protocol=https
+2025-03-17T03:53:24.720577+00:00 heroku[router]: at=info method=GET path="/storage/house04.jpg" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=daec89e1-f13a-482b-b035-a8de1994ae69 fwd="60.125.62.148" dyno=web.1 connect=0ms service=4ms status=200 bytes=569160 protocol=https
+2025-03-17T03:53:32.800582+00:00 heroku[router]: at=info method=GET path="/houses/44/reservations/input?fromCheckinDateToCheckoutDate=2025-03-17+%E3%81%8B%E3%82%89+2025-03-18&numberOfPeople=5" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=5e21dc18-f6e1-4285-a4b3-64acbbb7e351 fwd="60.125.62.148" dyno=web.1 connect=0ms service=25ms status=302 bytes=448 protocol=https
+2025-03-17T03:53:33.575010+00:00 heroku[router]: at=info method=GET path="/houses/44/reservations/confirm" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=7f5130e9-b7f7-45d0-aba8-b7feec890bdd fwd="60.125.62.148" dyno=web.1 connect=0ms service=581ms status=200 bytes=9420 protocol=https
+2025-03-17T03:53:33.767588+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=df15da9e-99ae-44c4-bbc8-f6dc1a4a800b fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=2333 protocol=https
+2025-03-17T03:53:33.767704+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=b6518d25-466c-46b4-a627-e361237d9850 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=3509 protocol=https
+2025-03-17T03:53:33.774290+00:00 heroku[router]: at=info method=GET path="/js/stripe.js" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=22506f25-2922-4c18-9c09-24ff6633a0c1 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=824 protocol=https
+2025-03-17T03:53:50.843005+00:00 heroku[router]: at=info method=GET path="/reservations?reserved" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=c31a3897-5283-40a7-992e-2474600fddd3 fwd="60.125.62.148" dyno=web.1 connect=0ms service=69ms status=200 bytes=13953 protocol=https
+2025-03-17T03:53:51.126345+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=1648eaa4-78d3-4c07-aee4-72a13082e333 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=2333 protocol=https
+2025-03-17T03:53:51.184828+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samuraitravel20250310-c41510ccd27e.herokuapp.com request_id=6d249896-0bc1-464e-bb6e-ed5883854be5 fwd="60.125.62.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=3509 protocol=https
+PS C:\workspease\samuraitravel>
